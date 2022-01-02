@@ -61,10 +61,10 @@ function cofere () {
 }
 function ClasseAleatória () {
     let p = document.getElementById("carta-gerada")
-    let estilo = [` newspaper`, ` magazine1`, ` magazine2` ]
-    let tamanho = [` medium`, ` big`, ` reallybig`]
-    let rotacao = [` rotateleft`, ` rotateright`]
-    let inclinacao = [` skewleft`, ` skewright`]
+    let estilo = [`newspaper`, `magazine1`, `magazine2` ]
+    let tamanho = [`medium`, `big`, `reallybig`]
+    let rotacao = [`rotateleft`, `rotateright`]
+    let inclinacao = [`skewleft`, `skewright`]
     let classes1 = [estilo, tamanho]
     let classes2 = [rotacao, inclinacao]
 
@@ -89,9 +89,7 @@ classSorteada2 = classSorteada1[numero2]
     classSorteada2 = classSorteada1[numero2]
     
             const span = p.children[ind];
-            span.className += classSorteada2
+            span.className += " " + classSorteada2
     
         }
 }
-
-ClasseAleatória()
